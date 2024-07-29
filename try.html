@@ -18,9 +18,86 @@
         }
 
         section {
-            text-align: center;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            transition: 1.2s;
+            /* justify-content: center; */
+            /* align-items: center; */
         }
 
+        .image {
+            max-width: 45%;
+            max-height: 600px;
+            overflow: hidden;
+            padding-top: 20px;
+            z-index: 1;
+            position: relative;
+            animation: float 1s ease-in-out;
+
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* text creative */
+        /* font-size: 162px !important;
+    margin-bottom: 82px;
+    opacity: 1 !important;
+    color: #453197 !important;
+    margin-top: 41px; */
+
+
+
+        .image img {
+            border-radius: 39% 61% 57% 43% / 30% 30% 70% 70%;
+            width: 80%;
+            width: 80%;
+            object-fit: contain;
+        }
+
+        .text-container {
+            padding: 10px 10px 10px 10px;
+            align-content: center;
+        }
+
+        .button {}
+
+        .about-container {}
+
+        .about-container h1 {
+            font-size: 62px;
+            opacity: 1 !important;
+            color: #453197 !important;
+        }
+
+        .about-container h3:hover {
+            /* font-size: 62px ; */
+            opacity: 1 !important;
+            color: #453197 !important;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
     </style>
 </head>
 
@@ -41,20 +118,21 @@
             </nav>
         </div>
     </header>
-    <section id="about">
+    <section id="main" class="main">
         <div class="image">
-            about
+            <img src="img/fotor-ai-202312081129.jpg" alt="adarsh">
         </div>
-        <div class="about">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum excepturi est praesentium sed debitis unde
-            libero, totam nisi earum illo dolore voluptates voluptatibus nemo velit saepe veniam, commodi explicabo
-            officia?
-        </div>
-        <div class="icon">
-
-            <a id="instagram" href="#"><img src="img/instagram.svg" alt="instagram"></a>
-            <a id="linkedin" href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
-            <a id="twitter" href="#"><img src="img/twitter.svg" alt="twitter"></a>
+        <div class="text-container">
+            <div class="about-container" id="about-container">
+                <h1>About Me</h1>
+                <h3>my colifications</h3>
+                <p>Hello! I'm Adarsh Yadav, a passionate web devloper with a love for creating beautiful and functional
+                    designs. With a background in Diploma, I have developed a keen eye for detail and a deep
+                    understanding of [Your Skills].</p>
+                <p>When I'm not working on projects, you can find me learn something new. I'm always eager to learn
+                    new things and take on challenging projects. Let's connect and create something amazing together!
+                </p>
+            </div>
         </div>
     </section>
 

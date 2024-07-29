@@ -84,10 +84,11 @@ body {
 .photo {}
 
 .photo img {
-  border-radius: 50%;
+  border-radius: 50% 50% 57% 43% / 75% 31% 69% 25%  ;
   background-color: black;
   max-width: 250px;
-  box-shadow: 0 8px 24px #808080;
+  box-shadow: 10px 10px 20px #babecc,
+  -10px -10px 20px #fff;
 }
 
 
