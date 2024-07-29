@@ -36,10 +36,6 @@ section {
     align-content: center;
 }
 
-.button {}
-
-.about-container {}
-
 .about-container h1 {
     font-size: 62px;
     opacity: 1 !important;
