@@ -1,9 +1,9 @@
 section#contact {
-
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #001d3d;
     height: 84%;
     position: relative;
     overflow: hidden;
