@@ -84,7 +84,6 @@ header {
 .text-contant {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2em;
   font-size: 20px;
   font-weight: 300;
   align-content: center;
@@ -128,8 +127,8 @@ button a {
 }
 
 button:hover {
-  box-shadow: 10px 5px 30px rgb(255, 1, 1);
-  background-color: #865d36;
+  box-shadow: 10px 5px 30px rgb(255, 224, 224);
+  background-color: #d72b00;
 }
 
 /* Photo Styles */
@@ -148,6 +147,8 @@ img {
   border-radius: 10px;
 }
 
+/* section style end */
+
 /* Footer Styles */
 footer {
   background-color: #333;
@@ -156,6 +157,7 @@ footer {
   text-align: center;
   clear: both;
 }
+/* Footer Styles end */
 .imagergb {
   border: 3px double #E7B495;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab), linear-gradient(-90deg, #01002400, #010024ff), linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab), linear-gradient(-90deg, #168dcf00, #168dcfff);
@@ -166,21 +168,26 @@ footer {
 
 @keyframes animate-shadow {
   0% {
-    box-shadow: 0 0 10px  rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
   }
+
   25% {
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
   }
+
   50% {
     box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
   }
+
   75% {
     box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
   }
+
   100% {
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
   }
 }
+
 /* Media Queries */
 @media (max-width: 768px) {
 
@@ -214,6 +221,7 @@ footer {
   .text-contant {
     max-width: 100%;
     padding: 1em;
+    padding: 2em;
   }
 
   .photo {
