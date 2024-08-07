@@ -17,7 +17,6 @@
       </div>
       <nav>
         <ul class="nav-list">
-          <!-- Setting the links to #! will ensure that no action takes place on click. -->
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="skill.html">skill</a></li>
@@ -26,57 +25,22 @@
       </nav>
     </div>
   </header>
-  <section class="main">
-    <div class="parent">
-      <div class="div1 comman">
-        <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Add a new task">
-        <button id="addTaskButton">Add Task</button>
-        <ul id="taskList"></ul>
-      </div>
-      <div class="div2 comman">hi </div>
-      <div class="div3 comman">buy </div>
-      <div class="div4 comman">? </div>
-      <div class="div5 comman">hehe </div>
+  <section class="main-container">
+    <div class="skilled">
+        <h2>Skills I Have</h2>
+        <div class="image">
+            <div class="div1"><img src="img/skill-img/2kElkIZxcktj7P90aom40ChZgFq.svg" alt="HTML"></div>
+            <div class="div2"><img src="img/skill-img/2kElrcO33YKyv2ARZKD7pICd7ii.svg" alt="Node.js"></div>
+            <div class="div3"><img src="img/skill-img/2kElwPUfwhWiOhKHfpVtkZkkXnl.svg" alt="JavaScript"></div>
+            <div class="div4"><img src="img/skill-img/2kElkIZxcktj7P90aom40ChZgFq.svg" alt="Skill 4"></div>
+        </div>
     </div>
-    <!-- <div class="background-shapes">
-      <div class="shape shape1"></div>
-      <div class="shape shape2"></div>
-      <div class="shape shape3"></div>
-    </div> -->
-  </section>
+</section>
   <footer>
     <p>&copy; 2024 [Adarsh Yadav]. All rights reserved.</p>
   </footer>
   <script>
 
-
-    document.getElementById('addTaskButton').addEventListener('click', addTask);
-
-    function addTask() {
-      const taskInput = document.getElementById('taskInput');
-      const taskText = taskInput.value.trim();
-
-      if (taskText !== '') {
-        const taskList = document.getElementById('taskList');
-        const listItem = document.createElement('li');
-        listItem.textContent = taskText;
-
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.addEventListener('click', function () {
-          taskList.removeChild(listItem);
-        });
-
-        listItem.appendChild(deleteButton);
-        listItem.addEventListener('click', function () {
-          listItem.classList.toggle('completed');
-        });
-
-        taskList.appendChild(listItem);
-        taskInput.value = '';
-      }
-    }
   </script>
 </body>
 

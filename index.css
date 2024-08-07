@@ -64,7 +64,9 @@ header {
 }
 
 .nav-list li a:hover {
+  transform: 0.6s;
   color: #E7B495;
+  text-decoration: underline;
 }
 
 /* Header Styles Ends*/
@@ -141,8 +143,8 @@ button:hover {
 img {
   width: 100%;
   max-width: 250px;
-  box-shadow: 10px 10px 20px #babecc,
-    -10px -10px 20px #fff;
+  /* box-shadow: 10px 10px 20px #babecc,
+    -10px -10px 20px #fff; */
   height: auto;
   border-radius: 10px;
 }
@@ -150,12 +152,15 @@ img {
 /* section style end */
 
 /* Footer Styles */
+
 footer {
   background-color: #333;
-  color: #fff;
-  padding: 1em;
+  color: white;
   text-align: center;
-  clear: both;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 /* Footer Styles end */
 .imagergb {

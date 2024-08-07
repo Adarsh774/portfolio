@@ -1,63 +1,44 @@
-.parent {
-    display: grid;
-    width: 100%;
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
-    justify-content: center;
-}
-.main{
-    
-}
-.comman{
-    background-color: aqua;
-}
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.div2 {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.div3 {
-    grid-area: 3 / 1 / 4 / 2;
-}
-
-.div4 {
-    grid-area: 4 / 1 / 5 / 2;
-}
-
-.div5 {
-    grid-area: 5 / 1 / 6 / 2;
-}
-
-#taskInput {
-    padding: 10px;
-    width: 300px;
-    margin-right: 10px;
-}
-
-#addTaskButton {
-    padding: 10px 20px;
-}
-
-#taskList {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-#taskList li {
-    padding: 10px;
-    background-color: #f9f9f9;
-    margin-bottom: 5px;
+.main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
-#taskList li.completed {
-    text-decoration: line-through;
-    color: #aaa;
+.skilled {
+    text-align: center;
+}
+.skilled h2 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.image {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image div {
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+}
+
+.image div img {
+    width: 100%;
+    height: auto;
+}
+
+.image div:hover {
+    transform: scale(1.10);
 }
