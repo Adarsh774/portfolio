@@ -7,7 +7,11 @@
 }
 
 .skilled {
+    height: auto;
+    width: auto;
     text-align: center;
+    margin-top: 40px;
+    border: 2px solid red;
 }
 .skilled h2 {
     text-align: center;
@@ -33,12 +37,13 @@
     overflow: hidden;
     transition: transform 0.4s ease-in-out;
 }
-
-.image div img {
-    width: 100%;
-    height: auto;
-}
-
 .image div:hover {
-    transform: scale(1.10);
+    transform: scale(1.09);
+}
+@media only screen and (max-width: 480px) {
+
+    /* For smaller mobile devices */
+    .image div {
+        flex-grow: 0;
+    }
 }

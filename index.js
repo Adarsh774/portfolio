@@ -18,6 +18,5 @@ function emailsend() {
 }
 // function for load about page 
 function about() {
-    window.location.href(
-        "about.html");
+    window.location.href("about.html");
 }
