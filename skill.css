@@ -1,50 +1,85 @@
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    background: #001d3d;
+.container {
+    width: 90%;
+    margin: 50px auto;
 }
 
-.skilled {
-    height: auto;
-    width: auto;
-    text-align: center;
-    margin-top: 40px;
-    border: 2px solid red;
-}
-.skilled h2 {
-    text-align: center;
-    font-size: x-large;
+.heading {
+    margin-bottom: 30px;
 }
 
-.image {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.heading h3 {
+    font-size: 16px;
+    color: #ffba00;
+    letter-spacing: 2px;
+}
+
+.heading h1 {
+    font-size: 48px;
+    color: #2d1366;
+    margin: 10px 0;
+}
+
+.heading p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 15px 25px;
+    color: white;
+    background-color: #6f00ff;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.buttons a:nth-child(2) {
+    background-color: transparent;
+    color: #6f00ff;
+    border: 2px solid #6f00ff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-top: 50px;
 }
 
-.image div {
-    flex-grow: 1;
-    flex-basis: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: transform 0.4s ease-in-out;
+.skill-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
 }
-.image div:hover {
-    transform: scale(1.09);
-}
-@media only screen and (max-width: 480px) {
 
-    /* For smaller mobile devices */
-    .image div {
-        flex-grow: 0;
-    }
+.skill-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    color: #2d1366;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.skill-card a {
+    text-decoration: none;
+    color: #ffba00;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
 }
