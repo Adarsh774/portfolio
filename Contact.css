@@ -156,7 +156,7 @@ section#contact {
     text-transform: uppercase;
 }
 
-.email h3 {
+.email p {
     color: rgb(58, 58, 58);
     font-size: 2.8vh;
     font-weight: 500;
@@ -284,7 +284,7 @@ section#contact {
 .formbold-form-input {
     width: 100%;
     padding: 13px 22px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #DDE3EC;
     background: #FFFFFF;
     font-weight: 500;
@@ -338,8 +338,9 @@ section#contact {
         align-items: center;
         flex-direction: column;
         height: auto;
-        
+
     }
+
     .containerleft {
         border-radius: 12px;
         background-color: #e6e6e6;
@@ -347,6 +348,7 @@ section#contact {
         flex-direction: column;
         width: 100%;
     }
+
     .project_detail {
         width: 100%;
         height: 100%;
@@ -355,7 +357,7 @@ section#contact {
         gap: 2vh;
         padding: 4vh;
     }
-    
+
     .service {
         display: flex;
         flex-direction: column;
@@ -364,21 +366,21 @@ section#contact {
         justify-content: center;
         align-items: center;
     }
-    
+
     .service h1 {
         color: black;
         font-size: 2.5vh;
         font-weight: 500;
         text-transform: uppercase;
     }
-    
+
     .service ul {
         display: flex;
         flex-wrap: wrap;
         gap: 2vh;
         padding: 1vh;
     }
-    
+
     .service ul li {
         padding: 1vh;
         font-size: 2vh;
@@ -388,50 +390,50 @@ section#contact {
         border-radius: 15px;
         border: rgb(212, 212, 212) 2px solid;
     }
-    
+
     .connect {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
-    
+
     .connect h1 {
         color: black;
         font-size: 2.5vh;
         font-weight: 500;
         text-transform: uppercase;
     }
-    
+
     .connect ul {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .connect ul li {
         list-style: none;
     }
-    
+
     .start_project {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
-    
+
     .start_project h1 {
         color: black;
         font-size: 2.5vh;
         font-weight: 500;
         text-transform: uppercase;
     }
-    
+
     .start_project h3 {
         color: rgb(58, 58, 58);
         font-size: 3vh;
         font-weight: 500;
     }
-    
+
     .my_detail {
         display: flex;
         flex-direction: column;
@@ -442,27 +444,27 @@ section#contact {
         gap: 2vh;
         align-items: center;
     }
-    
+
     .about {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
-    
+
     .about h1 {
         color: black;
         font-size: 2.5vh;
         font-weight: 500;
         text-transform: uppercase;
     }
-    
+
     .about p {
         color: rgb(58, 58, 58);
         font-size: 2.8vh;
         font-weight: 500;
     }
-    
+
     .email {
         display: flex;
         flex-direction: column;
@@ -470,38 +472,48 @@ section#contact {
         align-items: center;
         padding: 2vh;
     }
-    
+
     .email h1 {
         color: black;
         font-size: 2.5vh;
         font-weight: 500;
         text-transform: uppercase;
     }
-    
+
     .email h3 {
         color: rgb(58, 58, 58);
         font-size: 2.8vh;
         font-weight: 500;
     }
-    
+
     .call {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
-    
+
     .call h1 {
         color: black;
         font-size: 2.5vh;
         font-weight: 500;
         text-transform: uppercase;
     }
-    
+
     .call h3 {
         color: rgb(58, 58, 58);
         font-size: 2.8vh;
         font-weight: 500;
+    }
+    .formbold-input-flex{
+        flex-direction: column;
+    }
+    .formbold-form-input{
+        width: auto;
+    }
+    .formbold-radio-flex {
+        flex-direction: column;
+        align-items: baseline;
     }
 
 }
